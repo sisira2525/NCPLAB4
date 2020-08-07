@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <meta charset="utf-8"> 
+    <style> 
+        .first { 
+            position: absolute; 
+            width: 300px; 
+            height: 250px; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        } 
+    </style> 
+  
+    
+</head> 
+  
+<body> 
+    <div class="first">
+        <img id="s" src="/Users/sisirapathakamuri/Desktop/ncplab4/amrita.png"  width=250px height=200px top=50% left= 50% alt="amrita">
+    </div> 
+  
+    <script type="text/javascript"> 
+        var color1 = ["#00FFFF"]; 
+        var color2 = ["#000000"]; 
+  
+        document.querySelector("div").addEventListener( 
+                    "mouseenter", function () { 
+  
+            document.querySelector("div").style.background  
+                = color1[Math.floor(Math.random() * color1.length)]; 
+        }) 
+        document.querySelector("div").addEventListener( 
+                    "mouseleave", function () { 
+  
+            document.querySelector("div").style.background  
+                = color2[Math.floor(Math.random() * color2.length)]; 
+        }) 
+        document.getElementById("s").addEventListener( 
+                    "click", function () { 
+  
+                        location.replace("https://www.google.com")
+        }) 
+    </script> 
+</body> 
+  
+</html> 
